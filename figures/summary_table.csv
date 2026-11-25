@@ -1,0 +1,12 @@
+dataset,model,acc_mean,acc_std,time_mean,time_std,params,n_seeds
+cifar,baseline,0.5803,0.016,85.1789,1.9085,38570,3
+cifar,deeper,0.6453,0.0081,313.8897,5.0582,73178,3
+cifar,mobilenet_frozen,0.7693,0.0008,46.4795,0.0491,10250,3
+fashion,baseline,0.8828,0.0028,276.393,3.3165,38282,5
+fashion,baseline_k3_s2,0.8857,0.0045,108.8514,3.3625,38282,3
+fashion,baseline_k5_s1,0.8923,0.0119,392.4625,3.7598,46730,3
+fashion,baseline_k5_s2,0.8945,0.0048,125.6064,1.6794,46730,3
+fashion,baseline_k7_s1,0.8994,0.0057,545.3652,14.7045,59402,3
+fashion,baseline_k7_s2,0.8981,0.0023,148.1951,6.281,59402,3
+fashion,deeper,0.913,0.0114,982.3779,19.6342,72890,5
+fashion,mobilenet_frozen,0.8795,0.0013,169.8875,2.0047,10250,5
