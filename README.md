@@ -114,6 +114,6 @@ You do not need to retrain to rebuild the tables and most plots. Put `results.cs
 ## Known limitations
 
 - CIFAR-10 uses only 10,000 training images, so absolute CIFAR accuracies are far below full-dataset results.
-- `confusion_figure('cifar', 'deeper', FASHION_CLASSES)` in the notebook passes the Fashion-MNIST class names for the CIFAR-10 matrix. Change it to `CIFAR_CLASSES` before using `figures/fig_confusion_cifar_deeper.png`, and regenerate the figure.
+- `figures/fig_confusion_cifar_deeper.png` was generated before the notebook was fixed to use `CIFAR_CLASSES` (it used the Fashion-MNIST class names), so its axis labels are wrong. The notebook code is now correct. Rerun the confusion-matrix cell to regenerate the figure; it needs the `cm_cifar_deeper_seed*.npy` files that training produces.
 - Epoch counts (10 / 15) were chosen from a pilot run's validation curves. The pilot is not included.
 - Single hardware setup and few seeds (3-5), so small differences between models are within noise.
